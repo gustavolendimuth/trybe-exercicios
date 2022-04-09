@@ -49,6 +49,18 @@ console.log(palavraMenor);
 
 console.log('exercicio 4');
 
-for (let index = 1; index <= 50; index += 1) {
-  
+let maiorNumeroPrimo;
+let n = 50;
+
+for (let index = 1; index <= n; index += 1) {
+  let numeroDeMultiplicadores = 0;
+  for (let ii = 1; ii <= index; ii +=1) {
+    if (index % ii === 0) {
+      numeroDeMultiplicadores += 1;
+    }
+  }
+  if (numeroDeMultiplicadores === 2) {
+    maiorNumeroPrimo = index;
+  }
 }
+console.log(maiorNumeroPrimo);
