@@ -24,6 +24,7 @@ function Days(daysList) {
     let weekDay = document.createElement('li');
     weekDay.innerText = day;
     month.appendChild(weekDay);
+    weekDay.classList.add('day');
     // console.log(daysList[index]);
   }
 }
